@@ -8,8 +8,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      # Pinning to a known stable version before the Zephyr 4.1 breaking changes
-      revision: v0.1
+      revision: f633f86 # This is a stable commit from late 2024 before the Zephyr 4.1 bump
       import: app/west.yml
     - name: zmk-helpers
       remote: urob
