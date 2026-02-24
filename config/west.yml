@@ -1,18 +1,16 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+      url: https://github.com/zmkfirmware/zmk
     - name: urob
-      url-base: https://github.com/urob
-
+      url: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: f633f86 # This is a stable commit from late 2024 before the Zephyr 4.1 bump
+      revision: main  # Using the main branch is safer for Git fetching
       import: app/west.yml
     - name: zmk-helpers
       remote: urob
       revision: main
-
   self:
     path: config
